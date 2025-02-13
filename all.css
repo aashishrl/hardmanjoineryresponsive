@@ -177,75 +177,28 @@ header h2 {
   text-align: left;
 }
 
-.joinery-services-content {
-  padding: 16px 35px 0 88px;
-  font-size: 13px;
-}
-
-
-.service-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-  }
-  .service-section .service-description p span,
-  .equipment-section .equipment-description .heritage-link {
-    color: rgb(240, 0, 0);
-    font-family: Arial;
-    font-size: 12.8px;
-    position: relative;
-    top: -1px;
-    word-spacing: 0.5px;
-  }
-  .service-section .service-description p span a,
-  .equipment-section .equipment-description .heritage-link a {
-    color: rgb(240, 0, 0);
-    font-size: 11.8px;
-  }
-  .service-section .products-list {
-    margin-top: 22px;
-  }
-  .service-section .products-list p {
-    word-spacing: 0.27px;
-  }
-  .service-section .products-list .product-items {
-    margin-left: 106px;
-    list-style: none;
-    line-height: 18px;
-  }
-  .service-section .products-list .product-items li {
-    position: relative;
+.links-content {
+    padding: 32px 35px 41px  88px;
     font-size: 13px;
   }
-  .service-section .products-list .product-items li::before {
-    content: "•";
-    font-size: 14px;
-    color: black;
-    position: absolute;
-    left: -17.5px;
-    top: 50%;
-    transform: translateY(-50%);
+  .links-list{
+    padding-left: 39px;
   }
-  .equipment-section {
+  .link-content-link{
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    padding: 16px 0 31px 0;
+    align-items: center;
+    gap: 41.5px;
   }
-  .equipment-section .equipment-description {
-    padding-top: 15px;
+  .link-content-link p{
+    text-decoration: underline;
   }
-  .equipment-section .equipment-description p:nth-child(1) {
-    padding-bottom: 16px;
+  .link-content-link3{
+    margin-left: -39px;
+    margin-bottom: 1px;
   }
-  .equipment-section .equipment-description .heritage-profiles {
-    color: rgb(240, 0, 0);
+  .link-content-link3 img{
+    margin-right: -38px;
   }
-  .equipment-section img {
-    margin-top: -1px;
-  }
-
-
 
 
 
@@ -261,6 +214,22 @@ footer p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
+
+
+@media(max-width:480px){
+    .link-content-link {
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 42px;
+    }
+    .link-content-link3  {
+        margin-left: 0;
+    }
+    .link-content-link3  p{
+        margin-top: -54px;
+    }
+}
+
 @media (max-width: 768px) {
   aside {
     width: 20%;
@@ -334,26 +303,9 @@ footer p {
   header .website-logo {
     padding: 12px;
   }
-  .joinery-services-content {
+  .links-content {
     padding: 16px;
   }
-  .service-section{
-    flex-wrap: wrap-reverse;
-  }
-  .service-description{
-    margin-top: 24px;
-  }
-  .products-list{
-    margin-bottom: 24px;
-  }
-  .equipment-section .equipment-description p:nth-child(1) {
-    padding-bottom: 24px;
-}
-  .equipment-section{
-    flex-wrap: wrap-reverse;
-    padding-bottom: 12px;
-  }
-
 
   footer {
     margin-top: 24px;
@@ -363,7 +315,6 @@ footer p {
     text-align: left;
   }
 }
-
 
 @media (min-width: 1400px) {
   body {
