@@ -221,10 +221,14 @@
     }
     .link-content-link3 {
       margin-left: 0;
+      margin-top: -42px;
     }
     .link-content-link3 p {
       margin-top: -54px;
     }
+    .links-list {
+      padding-left: 0;
+  }
   }
   
   @media (max-width: 768px) {
