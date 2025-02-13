@@ -178,35 +178,43 @@ header h2 {
 }
 
 
-
-.news-content {
-  padding: 27px 35px 201px 83px;
+.gallery {
+  padding: 34px 0 0 35px;
   font-size: 13px;
-  display: flex;
-  gap: 5px;
 }
 
-
-.news-content .news-date {
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: -6px;
-}
-.news-content .news-description {
-  margin-bottom: 19px;
-}
-.news-content .news-image {
-  margin-bottom: 16px;
-}
-
-.news-image-gallery {
+.gallery .images {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  align-items: center;
+  gap: 15px;
+  margin-left: 16px;
 }
-.news-image-gallery div {
+
+.column {
   display: flex;
-  gap: 8px;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+}
+.column1 {
+  margin-bottom: 57px;
+}
+.column2 {
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.row3, .row4 {
+  margin-bottom: 36px;
+}
+.column3, .column4 {
+  margin-bottom: 41px;
+}
+.column5 {
+  margin-bottom: 39px;
+}
+.column6 {
+  margin-bottom: 38px;
 }
 
 
@@ -226,13 +234,10 @@ footer p {
 }
 
 @media (max-width: 480px) {
-  .news-content{
-    padding: 24px 12px!important;
-  }
-  .news-content img{
-    width: 100%;
-    object-fit: cover;
-  }
+ .gallery img{
+  width: 100%;
+  object-fit: cover;
+ }
 }
 
 @media (max-width: 768px) {
@@ -308,37 +313,34 @@ footer p {
   header .website-logo {
     padding: 12px;
   }
-  
+  .gallery{
+    padding: 35px 12px 40px;
+  }
+  .gallery .images {
+    margin-left: 0;
+  }
 
-  
-  .news-content{
+  .column{
     flex-wrap: wrap;
   }
-  .news-description2{
-    margin-bottom: 24px;
+  .image7,.image14, .image3, .image4{
+    width: 100%;
+    object-fit: cover;
   }
-  .news-image-gallery{
-    margin-bottom: 24px;
-  }
-  .news-image-gallery div {
-    flex-wrap: wrap;
-  }
+
+
 
 
   footer {
     margin-top: 24px;
-    padding-left: 12px;
+    padding: 0;
   }
   footer p {
     text-align: left;
+    padding: 0;
   }
 }
 
-@media (max-width: 1048px) {
-  .news-content {
-    padding: 27px 35px 0 11px;
-  }
-}
 
 @media (min-width: 1400px) {
   body {
